@@ -65,6 +65,7 @@
   height: 179px;
   margin-left: 12px;
   border-radius: 6px;
+  filter: brightness(60%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .buttonCont {  
@@ -73,4 +74,8 @@
 .mediaButton {
   width: 47px;
   height: 46px;
+  background: #FFFFFF;
+  border: 1px solid #E0EEF2;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
