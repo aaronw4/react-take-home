@@ -1,4 +1,6 @@
 import React from "react";
+import link from './images/link.png';
+import arrow from './images.Combined-Shape.png';
 
 const Campaigns = (props) => {
     const campaigns = props.campaigns
@@ -29,10 +31,10 @@ const Campaigns = (props) => {
                                 </div>
                                 <div>
                                     <button>
-                                        <img src='../images/link.png' alt=''/>
+                                        <img src={link} alt=''/>
                                     </button>
                                     <button>
-                                        <img src='Combined Shape.png' alt=''/>
+                                        <img src={arrow} alt=''/>
                                     </button>
                                 </div>
                             </div>
