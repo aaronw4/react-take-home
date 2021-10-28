@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import Campaigns from './Campaigns';
 import './App.css';
 
 function App() {
+  const [campaigns, setCampaigns] = useState([])
+
+  useEffect(() => {
+    axios.get('https://www.plugco.in/public/take_home_sample_feed')
+      .then(res => setCampaigns(res.data.campaigns))
+      .catch(err => console.log(err))
+  },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Campaigns campaigns={campaigns}/>
     </div>
   );
 }
