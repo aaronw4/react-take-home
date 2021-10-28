@@ -1,4 +1,7 @@
-.campTitle {
+#APP {
+  width: 375px;
+}
+.campMainTitle {
   display: block;
   margin: auto;
   margin-top: 37px;
@@ -24,7 +27,9 @@
   margin-left: 18px;
   border-radius: 18px;
 }
-.campText {
+.campTitle {
+  display: flex;
+  flex-direction: column;
   height: 28px;
   display: block;
   margin-left: 14px;
@@ -35,17 +40,37 @@
   letter-spacing: -0.456px;
   color: #000000;
 }
+.campText {
+  margin: 0px;
+  margin-left: 5px;
+}
+.campInstall {
+  margin: 0px;
+  width: 100px;
+  font-family: SFProText;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.32px;  
+  color: #009330;  
+}
 .mediaCont {
   background: #F7FBFC;
   display: flex;
   flex-direction: row;
   width: 374px;
-  overflow: scroll;
+  overflow: hidden;
 }
 .mediaImg {
   width: 101px;
   height: 179px;
-  margin-left: 18px;
+  margin-left: 12px;
   border-radius: 6px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.buttonCont {  
+  margin-left: 14px;
+}
+.mediaButton {
+  width: 47px;
+  height: 46px;
 }
