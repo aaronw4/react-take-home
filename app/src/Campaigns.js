@@ -26,11 +26,16 @@ const Campaigns = (props) => {
                     <div className='mediaCont'>
                         {campaign.medias.map(media => (
                             <div>
-                                <div>
+                                <div className='mediaImgCont'>
                                     <img
                                         src={media.cover_photo_url}
                                         alt=''
                                         className='mediaImg'
+                                    />
+                                    <img
+                                        src={play}
+                                        alt=''
+                                        className='mediaPlay'
                                     />
                                 </div>
                                 <div className='buttonCont'>
